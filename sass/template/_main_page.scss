@@ -148,7 +148,8 @@ p {
             }
 
             @include screen('mobile') {
-                min-height: 600px;
+                height: 520px;
+                min-height: 520px;
             }
 
             &:after {
@@ -288,6 +289,7 @@ p {
 
                     @include screen('mobile') {
                         font-size: .938rem;
+                        max-width: 100%;
 
                         br {
                             display: none;
@@ -312,7 +314,8 @@ p {
             }
 
             @include screen('mobile') {
-                min-height: 600px;
+                height: 520px;
+                min-height: 520px;
             }
 
             &:after {
@@ -454,6 +457,7 @@ p {
 
                     @include screen('mobile') {
                         font-size: .938rem;
+                        max-width: 100%;
 
                         br {
                             display: none;
@@ -480,7 +484,8 @@ p {
             }
 
             @include screen('mobile') {
-                min-height: 600px;
+                height: 520px;
+                min-height: 520px;
             }
 
             &:after {
@@ -620,6 +625,7 @@ p {
 
                     @include screen('mobile') {
                         font-size: .938rem;
+                        max-width: 100%;
 
                         br {
                             display: none;
@@ -1132,6 +1138,10 @@ p {
             flex-flow: row wrap;
         }
 
+        @include screen('mobile') {
+            padding: 0 1em;
+        }
+
         .item {
             flex-grow: 0;
             flex-shrink: 1;
@@ -1506,7 +1516,6 @@ p {
                     @include screen('xs_mobile') {
                         transform-origin: top center;
                         transform: scale(1.45);
-                        transform: translateX(-50px);
 
                     }
                 }

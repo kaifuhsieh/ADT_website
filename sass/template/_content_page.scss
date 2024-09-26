@@ -168,7 +168,11 @@
 
                 @include screen('mobile') {
                     flex-basis: 100%;
-                    padding: 1em 1em 3em;
+                    padding: 2em 1em;
+
+                    &:last-child {
+                        border: none;
+                    }
                 }
 
                 h3 {
@@ -307,6 +311,11 @@
                                 padding-left: 1.5em;
                                 line-height: 1.75em;
 
+                                @include screen('mobile') {
+                                    background: url(../images/icon_pdf.svg) no-repeat left .25em;
+                                    background-size: 1em;
+                                }
+
                                 a {
                                     display: block;
                                     text-decoration: none;
@@ -327,6 +336,7 @@
             .showcase {
                 background-color: transparent;
                 padding: 1em 0 3em;
+                border-bottom: 1px solid #AAA;
 
                 h2.title {
                     color: $auo_blue;
