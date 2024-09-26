@@ -148,8 +148,8 @@ p {
             }
 
             @include screen('mobile') {
-                height: 520px;
-                min-height: 520px;
+                height: 540px;
+                min-height: 540px;
             }
 
             &:after {
@@ -314,8 +314,8 @@ p {
             }
 
             @include screen('mobile') {
-                height: 520px;
-                min-height: 520px;
+                height: 540px;
+                min-height: 540px;
             }
 
             &:after {
@@ -484,8 +484,8 @@ p {
             }
 
             @include screen('mobile') {
-                height: 520px;
-                min-height: 520px;
+                height: 540px;
+                min-height: 540px;
             }
 
             &:after {
@@ -2221,5 +2221,24 @@ p {
                 margin: 0 0 1em;
             }
         }
+    }
+}
+
+.btn_contact {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 360px;
+    background-color: $auo_blue;
+    padding: 1em 2em;
+    border-radius: 3em;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+    color: #fff !important;
+    font-size: 1.5em;
+
+    &:hover {
+        background-color: darken($auo_purple, 0);
+        color: $auo_blue !important;
     }
 }

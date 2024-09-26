@@ -20,6 +20,14 @@
             right: 0;
             top: 0;
 
+            @media screen and (max-width:1400px) {
+                background: url(../images/inner_head_bg.png) no-repeat left top;
+                width: 60%;
+                height: 200px;
+                right: 0;
+                top: 0;
+            }
+
             @include screen('tablet') {
                 background: url(../images/inner_head_bg.png) no-repeat left top;
                 width: 50%;
@@ -45,7 +53,7 @@
             transform: rotate(0deg);
             opacity: .15;
 
-            @media screen and (max-width: 1400px) {
+            @media screen and (max-width: 1600px) {
                 border-width: 500px 500px 0 0;
                 border-color:
                     #FFF transparent transparent transparent;
@@ -337,6 +345,10 @@
                 background-color: transparent;
                 padding: 1em 0 3em;
                 border-bottom: 1px solid #AAA;
+
+                &:last-child {
+                    border: none;
+                }
 
                 h2.title {
                     color: $auo_blue;
