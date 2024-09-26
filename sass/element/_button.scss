@@ -1,0 +1,82 @@
+.btn_grp {
+    margin: 2em 0;
+    position: relative;
+    display: flex;
+    width: 100%;
+
+    button {
+        border: none;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: 80px;
+        margin: 0 .25em;
+        min-width: 8em;
+        border-radius: .5em;
+        color: #FFF;
+
+        &.btn-primary {
+            background-color: $auo_blue;
+            color: #FFF;
+            transition: .3s ease-out;
+
+            &:hover,
+            &:focus {
+                background-color: lighten($auo_purple, 0);
+                color: #FFF;
+            }
+        }
+
+        &.btn-reset {
+            background-color: lighten($auo_blue, 20);
+            color: #FFF;
+            transition: .3s ease-out;
+
+            &:hover,
+            &:focus {
+                background-color: lighten($auo_blue, 40);
+                color: #FFF;
+            }
+        }
+    }
+}
+
+a {
+    &.btn {
+        cursor: pointer;
+        min-width: 120px;
+        margin: 0 auto;
+        max-width: 360px;
+        display: block;
+        height: 54px;
+        line-height: 54px;
+        padding: 0 16px;
+        font-size: 1.25em;
+        border-radius: 14px;
+        text-align: center;
+        outline: 0 !important;
+        overflow: hidden;
+        border: none;
+        position: relative;
+        z-index: 1;
+        transition: 0.3s ease-out;
+
+        &:hover,
+        &:focus {
+            span {
+                color: #fff;
+            }
+
+            box-shadow: 0px 0px 30px lighten(#00b8d4, 10);
+        }
+    }
+
+    .btn-title {
+        position: relative;
+        z-index: 2;
+    }
+
+    &.btn-primary {
+        background-color: #00b8d4;
+        color: #fff;
+    }
+}
