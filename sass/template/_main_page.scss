@@ -1139,7 +1139,7 @@ p {
         }
 
         @include screen('mobile') {
-            padding: 0 1em;
+            padding: 0;
         }
 
         .item {
@@ -2238,11 +2238,12 @@ p {
     font-size: 1.5em;
 
     @include screen('xs_mobile') {
-        max-width: 80%;
-        min-width: 360px;
+        font-size: 1.25em;
+        max-width: 340px;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
         background-color: darken($auo_purple, 0);
         color: $auo_blue !important;
     }
