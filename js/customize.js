@@ -34,7 +34,7 @@ $(function () {
     });
     // kv
     var $carousel = $('.carousel').slick({
-        dots: false,
+        dots: true,
         infinite: true,
         speed: 2000,
         fade: true,
