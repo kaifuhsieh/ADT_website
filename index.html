@@ -51,6 +51,11 @@
             top: 0;
         }
 
+        @media screen and (max-width:767px) {
+            overflow: hidden !important;
+            overflow-y: auto;
+        }
+
         body {
             flex-grow: 0;
             flex-shrink: 1;
@@ -84,6 +89,10 @@
                 margin: 0em auto 1em;
                 flex-basis: 100%;
                 padding: 3em 2em 3em;
+                overflow-x: hidden !important;
+                flex-grow: 0;
+                flex-shrink: 1;
+                flex-basis: 100%;
             }
         }
 
