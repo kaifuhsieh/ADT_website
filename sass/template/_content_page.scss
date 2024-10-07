@@ -167,14 +167,17 @@
             .item {
                 flex-grow: 0;
                 flex-shrink: 1;
-                flex-basis: 50%;
+                flex-basis: 25%;
                 display: block;
                 text-align: left;
                 padding-bottom: 5em;
-                border-bottom: 1px solid #AAA;
                 padding: 1em 2em 3em 0.5em;
 
-                @include screen('mobile') {
+                @include screen('tablet') {
+                    flex-basis: 50%;
+                }
+
+                @include screen('xs_mobile') {
                     flex-basis: 100%;
                     padding: 2em 1em;
 
@@ -185,12 +188,9 @@
 
                 h3 {
                     color: $auo_blue;
-                    font-size: 1.5em;
+                    font-size: 1.125em;
                     font-weight: normal;
 
-                    @include screen('mobile') {
-                        font-size: 1.25em;
-                    }
 
                 }
 
